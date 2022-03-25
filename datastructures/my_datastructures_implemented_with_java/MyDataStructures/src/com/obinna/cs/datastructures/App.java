@@ -11,7 +11,7 @@ import com.obinna.cs.datastructures.list.linkedlist.singlylinkedlist.SinglyLinke
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, Data Structues World!");
+        System.out.println("Hello, Data Structures World!");
         var app = new App();
         app.testSinglyLinkedList();
     }
