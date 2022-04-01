@@ -6,7 +6,7 @@ package com.obinna.cs.datastructures.list;
  * @author okalu
  * @since 2022-03-25
  */
-public class AbstractList<E> implements List<E> {
+public abstract class AbstractList<E> implements List<E> {
     protected Integer size = 0;
 
     public Integer getSize() {
