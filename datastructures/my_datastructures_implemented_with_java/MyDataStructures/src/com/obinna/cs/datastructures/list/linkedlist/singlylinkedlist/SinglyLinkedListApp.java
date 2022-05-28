@@ -1,20 +1,18 @@
-
-package com.obinna.cs.datastructures;
-
-import com.obinna.cs.datastructures.list.linkedlist.singlylinkedlist.SinglyLinkedList;
+package com.obinna.cs.datastructures.list.linkedlist.singlylinkedlist;
 
 /**
- * Here is the main executable class for MyDataStructures
- * implemented with Java
+ * SinglyLinkedListApp.java
+ * This is the executable for the SinglyLinkedList implementation
  * 
  * @author okalu
- * @since 2022-03-25
+ * @since 2022-05-17
  */
-public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, Data Structures World!");
-        var app = new App();
+class SinglyLinkedListApp {
+    public static void main(String[] args) {
+        System.out.println("Hello, Starting SinglyLinkedListApp!");
+        var app = new SinglyLinkedListApp();
         app.testSinglyLinkedList();
+        System.out.println("Good bye, finished SinglyLinkedListApp!");
     }
 
     private void testSinglyLinkedList() {
@@ -28,5 +26,4 @@ public class App {
         System.out.printf("Number of items: %d\n", sll.getSize());
         System.out.printf("SinglyLinkedList after reversing: %s\n", sll);
     }
-
 }
