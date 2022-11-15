@@ -13,8 +13,10 @@ public class SinglyLinkedList<E> extends AbstractList<E> {
     public SinglyLinkedList(ListItem<E> first, ListItem<E> last) {
         this.first = first;
         this.last = last;
-        if(this.first != null)
-            this.first.next = last;
+        if(this.first != null && this.last == null)
+            this.last = this.first;
+        if(this.first != null && this.last != null)
+            this.first.next = last;       
     }
 
     public SinglyLinkedList(ListItem<E> first) {
